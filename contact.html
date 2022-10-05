@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="icon" href="./images/icon.png">
+    <script src="scripts/contact.js" defer></script>
+    <title> צור קשר</title>
+</head>
+
+<div class="container">
+    <div id="title">
+        <h1>צרו איתנו קשר</h1>
+        <p>יש לכם הערות/בקשות/שאלות? מוזמנים לשלוח לנו הודעה ונחזור אליכם בהקדם</p>
+    </div>
+    <div class="row">
+        <form id="myForm" onsubmit="validateForm(event)">
+            <span id="error-msg"></span>
+            <div>
+                <label for="fname">
+                    <p>שם </p>
+                </label>
+                <input id="fname" type="text" name="first-name" placeholder="הזן את שמך הפרטי.." required>
+            </div>
+            <div>
+                <label for="lname">
+                    <p> שם משפחה </p>
+                </label>
+                <input id="lname" type="text" name="last-name" placeholder="הזן שם משפחה.." required>
+            </div>
+            <div>
+                <label for="fhone">
+                    <p> טלפון </p>
+                </label>
+                <input id="fhone" type="text" name="fhone" placeholder="הזן את מספר הטלפון.." required>
+            </div>
+            <div>
+                <label for="mail">
+                    <p>כתובת מייל </p>
+                </label>
+                <input id="mail" type="email" name="email" placeholder="הזן את כתובת המייל שלך.." required>
+            </div>
+            <div>
+                <label for="subject">
+                    <p>נושא הפניה </p>
+                </label>
+                <textarea id="subject" name="subject" placeholder="כתוב לנו.." required></textarea>
+            </div>
+            <input id="button" type="submit" value="שלח">
+        </form>
+        <div id="img">
+            <img src="/images/contactus.png"
+                alt="בתמונה רואים יד של מישהו שהאצבע שלו לוחצת על הפלאפון. מעל לאצבע נפתחת חלונית מלבנית שבה מופיעים מימין לשמאל שלושת האייקונים הבאים: שטרודל, מייל, וטלפון  ">
+        </div>
+    </div>
+</div>

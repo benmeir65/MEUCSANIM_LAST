@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
+
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/GveretLevinAlefAlefAlefRegular.ttf');
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: 'Assistant', sans-serif;
+}
+
+
+body {
+    padding: 0 120px;
+}
+
+
+
+
+nav {
+    padding: 2px 10px;
+    position: relative;
+    font-family: 'MyWebFont';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25PX;
+}
+
+
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-family: 'MyWebFont';
+
+
+}
+
+ul li {
+    margin: 8px 0px 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    font-family: mywebfont;
+    color: black;
+}
+
+
+#search-container {
+    display: flex;
+    max-height: 30px;
+    justify-content: left;
+    margin-left: 0 px;
+}
+
+
+
+
+#search-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+#search-icon {
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+header {
+    font-family: MyWebFont;
+    text-align: center;
+    background-image: url('../images/BOX3.png');
+    background-size: 100% 100%;
+    background-position: center;
+    width: 1300PX;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    height: fit-content;
+    margin-bottom: 00px;
+    padding: 20px 0;
+    margin-top: -2OX;
+
+
+}
+
+header>h1 {
+    width: 100%;
+}
+
+h1 p {
+    font-family: MyWebFont;
+
+}
+
+
+
+#p1 {
+    font-size: 60px;
+    color: brown;
+}
+
+
+#p2 {
+    color: #BA8E55;
+
+}
+
+
+
+.title {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: MyWebFont;
+    width: 70%;
+    border-bottom: 2px solid #BA8E55;
+    padding-bottom: 3px;
+    color: brown;
+    text-decoration: underline;
+}
+
+header div p {
+    max-width: 330px;
+    padding-right: 8px;
+}
+
+
+
+.btn {
+    font-size: 40px;
+    padding: 5px 8px;
+    border: 2px solid black;
+    background-color: yellow;
+    cursor: pointer;
+    font-family: MyWebFont;
+    margin-top: 0PX;
+}
+
+
+.btn:hover {
+    background-color: red;
+}
+
+
+section {
+    min-height: 200px;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 0PX;
+}
+
+#section1,
+#section2,
+#section3 {
+    background-size: 100% 100%;
+    background-image: url('../images/drawer.png');
+}
+
+
+
+
+.drawer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 8px 4px rgba(125, 125, 125, 0.625);
+    border-radius: 25px;
+    width: 1200px;
+    padding: 30px 30px;
+    margin-bottom: 12px;
+    height: 70%;
+}
+
+
+#section1 img {
+    margin-top: 10px;
+
+}
+
+section img {
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 8px 4px rgba(125, 125, 125, 0.625);
+    border-radius: 25px;
+    margin-top: 5px;
+
+}
+
+#sectu #text {
+    width: 500px;
+}
+
+
+
+section p {
+    margin-top: 10px;
+    font-family: arimo;
+    font-size: 25px;
+}
+
+
+
+
+section button {
+    margin: 20px 0;
+}
+
+
+footer {
+    background-image: url('../images/FOOTER.png');
+    width: 1300px;
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 20px;
+    margin: 0 auto;
+    margin-top: 0PX;
+
+}
+
+h5 {
+    color: right;
+    font-family: MyWebFont;
+    color: white;
+    font-size: 25px;
+}
+
+h6 {
+    color: right;
+    font-family: MyWebFont;
+    color: white;
+    font-size: 16px;
+}
+
+
+footer a {
+    color: white;
+    font-family: arimo;
+    font-size: 25px;
+}
+
+
+footer a:hover {
+    color: red;
+}
+
+
+footer .box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#imgfooter {
+    height: 80px;
+    width: 80px;
+
+}

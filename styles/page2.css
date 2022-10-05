@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: 'Assistant', sans-serif;
+}
+
+
+body {
+    direction: rtl;
+    padding: 0 100px;
+    min-height: 100vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
+
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/GveretLevinAlefAlefAlefRegular.ttf');
+
+}
+
+
+nav {
+    padding: 2px 0;
+    position: relative;
+    font-family: 'MyWebFont';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+}
+
+nav ul li {
+    margin: 8px 0px 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    font-family: mywebfont;
+    color: black;
+}
+
+
+#search-container {
+    display: flex;
+    max-height: 30px;
+    justify-content: left;
+    margin-left: 0 px;
+}
+
+
+#search-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+#search-icon {
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+header {
+    text-align: center;
+    background-image: url('../images/kitchen2.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 00px;
+    position: relative;
+
+}
+
+header h1 {
+    width: 100%;
+    font-family: 'MyWebFont';
+    font-size: 90px;
+    color: brown;
+    margin-top: 2px;
+    position: absolute;
+}
+
+/*main style  */
+
+main {
+    height: 100%;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul.foodslist {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+
+.foodslist li {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 5px;
+    position: relative;
+    cursor: pointer;
+    background-image: url('../images/woodendrawer.png');
+    color: black;
+    font-family: 'MyWebFont';
+    font-size: 30px;
+    height: 70px;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+ul.foodslist li span {
+    font-family: 'MyWebFont';
+    color: black;
+
+}
+
+
+.foodslist li:hover {
+    background-color: chocolate;
+}
+
+main ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+}
+
+.foodslist a:active {
+    background-color: brown;
+}
+
+
+ul li:hover ul {
+    position: absolute;
+    display: block;
+}
+
+
+
+section {
+    display: none;
+}
+
+
+
+
+#explain-box {
+    padding: 0px;
+    text-align: center;
+    Position: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    flex-direction: column;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 350px;
+
+}
+
+
+#explain-box img {
+    height: 100px;
+}
+
+#explain-box p {
+    border-top: 1px solid black;
+    padding: 7px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: brown;
+    font-size: 40px;
+    font-family: 'MyWebFont';
+}
+
+#explain-box img {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    transition: all 1s;
+    animation: moveSitdeToSide 4s linear infinite normal;
+}
+
+
+
+@keyframes moveSitdeToSide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#slidding-window {
+    display: none;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin-top: 20px;
+}
+
+#slidding-window #slide-title {
+    background-color: yellow;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-bottom: solid 3px black;
+
+
+}
+
+#slidding-window #slide-title span {
+    position: absolute;
+    right: 0;
+}
+
+
+#imgs-bar {
+    width: 100%;
+    height: 200px;
+    background-color: aqua;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2px;
+    margin-top: 0px;
+    border: 2px solid grey;
+}
+
+div#boxs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div#boxs p {
+    font-size: 20px;
+}
+
+
+#imgs-bar .box {
+    border: 1px solid black;
+    margin: 0 8px;
+    padding: 0;
+    cursor: pointer;
+    width: fit-content;
+    position: flex;
+    background-color: white;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding: 2px 2px;
+    height: fit-content;
+    padding: 10px 5px;
+    justify-content: center;
+}
+
+
+
+#imgs-bar a img {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#close-box {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#close {
+    background-color: black;
+    width: inherit;
+    height: inherit;
+
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+
+
+div #close {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+
+#slidding-window #left,
+#slidding-window #right {
+    background-color: white;
+    width: 80px;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    cursor: pointer;
+    border-style: 10PX dotted;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#slidding-window #right {
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+
+}
+
+#slidding-window #right a {
+    color: white;
+    font-family: arimo;
+    font-size: 18px;
+}
+
+#slidding-window #left a {
+    color: white;
+    font-family: arimo;
+    font-size: 16px;
+}
+
+#imgs-bar.box :hover {
+    background-color: yellow;
+}
+
+
+h1 span {
+    background-color: red;
+}
+
+
+section h1 p {
+    margin-right: 45%;
+}
+
+
+section h3 {
+
+    width: 100%;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
+
+section p {
+    font-size: 25px;
+    width: 100%;
+    /* display: none; */
+    /* display: inline; */
+}
+
+
+section ol {
+    font-size: 25px;
+}
+
+
+
+section img {
+    width: 40%;
+    position: flex;
+    justify-content: start;
+}
+
+
+.fruits li a {
+    color: white;
+}
+
+.title {
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.title:hover {
+    background-color: aquamarine;
+}
+
+
+div#imgs-bar P {
+    font-family: arimo;
+    font-size: 40px;
+}
+
+.answer {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: blue;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+}

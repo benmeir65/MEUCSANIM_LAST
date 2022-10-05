@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap');
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/GveretLevinAlefAlefAlefRegular.ttf');
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: 'Assistant', sans-serif;
+}
+
+
+body {
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
+    direction: rtl;
+}
+
+
+
+
+nav {
+    padding: 2px 10px;
+    position: relative;
+    font-family: 'MyWebFont';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25PX;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-family: 'MyWebFont';
+
+}
+
+ul li {
+    margin: 8px 0px 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    font-family: mywebfont;
+    color: black;
+}
+
+
+#search-container {
+    display: flex;
+    max-height: 30px;
+    justify-content: left;
+    margin-left: 0 px;
+}
+
+
+
+
+#search-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+#search-icon {
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+header {
+    flex-direction: column;
+    text-align: center;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+header h1 {
+    font-family: 'MyWebFont';
+    font-size: 60px;
+    text-decoration: underline solid 1px black;
+    color: brown;
+    margin-bottom: 30px;
+}
+
+
+
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: arimo;
+    font-size: 25px;
+    width: 550px;
+}
+
+#subtitle {
+    width: 200px;
+}
+
+#top #imgtop img {
+    max-height: 400px;
+}
+
+
+b {
+    font-size: 30px;
+    color: brown;
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 b {
+    font-family: MyWebFont;
+    font-size: 40px;
+}
+
+
+
+#frontsections {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+    width: 100%;
+    background-image: url('../images/SHELF.png');
+    background-size: cover;
+    position: relative;
+    margin-bottom: 1000PX;
+    margin-top: 70px;
+}
+
+#frontsections>div {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/box7.png');
+    background-size: 100% 100%;
+    flex-grow: 1;
+    height: 350px;
+    cursor: pointer;
+}
+
+
+#frontsections>div:hover {
+    height: 400px;
+    width: 800px;
+}
+
+
+
+#frontsections>div:hover h3 {
+    font-size: 40PX;
+
+}
+
+
+
+#frontsections div img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 60px;
+    box-shadow: 0 0 8px 4px rgba(125, 125, 125, 0.625);
+
+}
+
+h3 {
+    font-family: MyWebFont;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+}
+
+.front section {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0PX;
+    display: none;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+#frontsections>div:hover section {
+    display: block;
+}
+
+
+
+
+
+.back .text {
+    position: absolute;
+    height: 700px;
+    font-size: 30px;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 5px;
+    box-shadow: 0 0 8px 4px rgba(125, 125, 125, 0.625);
+    border-radius: 25px;
+    padding-top: opx;
+    bottom: 40px;
+
+}
+
+.back .text b {
+    font-size: 33px;
+}

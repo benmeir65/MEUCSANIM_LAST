@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="styles/page2.css">
+  <link rel="icon" href="./images/icon.png">
+  <script src="./scripts/script.js"></script>
+  <title>אחסון בבית</title>
+</head>
+
+
+
+<nav>
+  <ul>
+    <li> <a href="./index.html">עמוד הבית</a> </li>
+    <li class="currentPage"> <a href="./page2.html">אחסון בבית</a> </li>
+    <li> <a href="#">אחסון בחוץ</a> </li>
+    <li> <a href="./page3.html">למה לאחסן?</a> </li>
+  </ul>
+
+
+  <div id="search-container">
+    <button id="search-btn">
+      <img id="search-icon" src="images/searchIcon.png" alt="">
+    </button>
+    <input type="text" placeholder="Search">
+  </div>
+
+
+
+</nav>
+
+<header>
+  <h1>אחסון בבית </h1>
+</header>
+
+<main>
+
+
+  <ul class=foodslist>
+    <li id="fruits-li" onclick="openLiFruit()"> פירות
+      <ul class="fruits">
+        <li><a onclick=" openFruitSlide(0)">בננות</a> </a> </li>
+        <li> <a onclick=" openFruitSlide(1)">אבוקדו</a></li>
+        <li><a onclick=" openFruitSlide(2)">אבטיח</a> </li>
+        <li><a onclick=" openFruitSlide(3)">ענבים</a> </li>
+        <li><a>אפרסק</a></li>
+        <li><a>מנגו</a> </li>
+        <li><a>מלון</a> </li>
+        <li><a>שזיפים</a> </li>
+        <li><a>תותים</a> </li>
+        <li><a>תפוזים</a> </li>
+        <li><a>תפוחים</a> </li>
+      </ul>
+    </li>
+    <li><span>ירקות</span> </li>
+    <li><span>דגים ובשר</span> </li>
+    <li><span> מאפים</span></li>
+    <li><span>קטניות</span> </li>
+    <li><span>ביצים ומותרי חלב</span></li>
+    <li><span>שמנים, קפה ותה</span></li>
+    <li><span>פיצוחים</span> </li>
+  </ul>
+
+
+  <div id="explain-box">
+    <img src="./images/POINTER.png" alt="">
+    <p id="explain">בחרו אחד מהמזונות שברשימה ולמדו כיצד לאחסן אותו נכון</p>
+  </div>
+
+  <div id="slidding-window">
+    <div id="imgs-bar">
+      <P> לחצו על אחד מהפירות או התקדמו עם החיצים לקבל הסבר </P>
+      <div id="boxs">
+        <div id="right" onclick="right()"> <a>הקודם</a> </div>
+        <div class="box"> <a> <img src="./images/bananabar.png" alt="תמונה של בננה"> </a> </div>
+        <div class="box"> <a> <img src="./images/avocadobar.png" alt="תמונה של חצי אבוקדו, עם הגרעין"> </a> </div>
+        <div class="box"> <a> <img src="./images/watermelonbar.png" alt="תמונה של אבטיח"> </a> </div>
+        <div class="box"> <a> <img src="./images/grapesbar.png" alt="תמונה של ענבים"> </a> </div>
+        <div id="left" onclick="left()"> <a>הבא</a> </div>
+        <div id="close-box" onclick="closeSliddingWindow()">
+          <span id="close"> לחץ כאן לסגירה </span>
+        </div>
+      </div>
+    </div>
+    <h1 id="slide-title">
+    </h1>
+  </div>
+
+
+
+  <section id="section1" name="banana" title="בננות" class="slide">
+    <div>
+      <h3 class="title"> <SPAN CLASS="pluse"> +</SPAN> איפה לאחסן? </h3>
+      <div class="answer">
+        <p>
+          בננות אסור להכניס למקרר; הקור פוצע את קליפת הפרי ומאיץ את השחרתו עוד לפני שהבננה מספיקה להבשיל
+          וגם הטעם , המרקם והערכים התזונתיים שלה מתקלקלים במקרר .
+          ולכן, יש לאחסן את הבננות בסלסלת הפירות -במקום מאורר ומוצל, בטמפרטורת החדר.
+          רצוי להניח את הבננות כשהן מחוברות יחד ולא נפרדות זו מזו- כך הן נשארות טריות יותר.
+        </p>
+        <img src="./images/banan1.jpg" alt="ארבע בננות מאוגדת יחד בתוך סלסלה ">
+      </div>
+    </div>
+    <div>
+      <h3 class="title"> <SPAN CLASS="pluse">+</SPAN> איך להאיץ את ההבשלה של הבננות כשהן עדיין ירוקות? </h3>
+      <div class="answer">
+        <p>
+          הכניסו אותן לשקית נייר יחד עם תפוח, אבוקדו או אגס בשל; פירות אלו גורמים לבננה לפלוט גז בשם אתילן
+          המאיץ את ההבשלה שלה. משך ההבשלה עשוי לקחת בין יום לחמישה ימים.
+        </p>
+        <img src="./images/banana2.jpg" alt=" ארבע בננות בתוך שקית ניייר חומה">
+      </div>
+
+    </div>
+    <div>
+      <h3 class="title"> <SPAN CLASS="pluse"> +</SPAN> איך ניתן למנוע מהבננות להירקב כשהן בשלות ? </h3>
+      <div class="answer">
+        <p>
+          את קצוות הגבעולים שלהן בניילון נצמד/נייר כסף וכך תאטו את הימלטות גז האטילן (שמאיץ את תהליך ההבשלה).
+          אין לעטוף את הבננות בשקית ניילון! זה גורם ללחות שמאיצה את הריקבון שלהן.
+          בננות יכולות להישאר טריות בין 5 ל7 ימים.
+        </p>
+        <img src="./images/banana3.jpg" alt=" בננות שהקצה שלהן עטוף בניילון נצמד">
+      </div>
+
+    </div>
+    <div>
+      <h3 class="title"> <SPAN CLASS="pluse"> +</SPAN> האם ניתן להקפיא ? </h3>
+      <div class="answer">
+        <P>
+          .כן, רק ללא הקליפה; כשהקליפה קפואה היא נצמדת לפרי וקשה מאוד להסיר אותה ממנו.
+          בננות במקפיא יכולות להישאר טריות עד שישה חודשים
+          רצוי לחתוך מראש את הבננות ולעטוף אותן בנייר כסף / ניילון אטום או להניח אותן בכלי פלסטיק.
+        </P>
+        <img src="./images/banana4.jpg" alt="בננות ללא קליפפות החתוכות לעיגולים">
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" name="avocado" title="אבוקדו" class="slide">
+    <div>
+      <h3 class="title"> <SPAN CLASS="pluse"> +</SPAN> איפה לאחסן את האבוקדו כשהוא עוד קשה? </h3>
+      <div class="answer">
+        <p>
+          הניחו אותו על השיש בטמפרטורת החדר, הרחק מאור שמש טבעי.
+          ההבשלה עשויה להימשך עד חמישה ימים.
+        </p>
+        <img src="./images/avocado1.png" alt="אבוקדו בתוך סללה יםד עםתפוחים ובננות">
+      </div>
+    </div>
+    <div>
+      <h3 class="title"><SPAN CLASS="pluse"> +</SPAN> איך ניתן להאיץ את הבשלת האבוקדו? </h3>
+      <div class="answer">
+        <p>
+          הכניסו את האבוקדו לתוך שקית נייר חומה יחד עם בננה/תפוח
+          או אפילו מלאו את התחתית של השקית בקמח.
+          שיטה זו מגבירה את כמות גז האתילן שנפלטת החוצה מהפירות ומזרזרת את ההבשלה שלהן.
+        </p>
+        <img src="./images/avocado2.jpg" alt="שולחן עץ שעליו מונחת בשכיבה שקית נייר חומה ובתוכה 7 אבוקדו שלמים">
+      </div>
+    </div>
+    <div>
+      <h3 class="title"> <SPAN CLASS="pluse"> +</SPAN> איך לשמור על האבוקדו טרי לאורל זמן ? </h3>
+      <div class="answer">
+        <p> כדי לשמור על אבוקדו טרי לאורך זמן (בין אם הוא חתוך ובין אם שלם), יש להכניס אותו למקרר ולחסום את המגע שלו עם
+          אוויר. </p>
+        <ol> קבלו כמה טיפים לאחסון אבוקדו במקרר:
+          <li>
+            מאחסנים חתיכות של אבוקדו בתוך קופסה סגורה יחד עם מיץ לימון.
+          </li>
+          <li> מניחים את האבוקדו בתוך קופסא סגורה, מעל לחתיכות של בצל סגול. </li>
+          <li>
+            <p> מורחים שמן זית על כל השטח של האבוקדו (גם על החלק החשוף וגם על הקליפה), </p>
+            <p>ומכניסים לכלי אטום. מריחה נכונה של אבוקדו בשמן זית יוצרת שכבת הגנה אשר </p>
+            <p>מפחיתה את החשיפה שלו לאוויר. </p>
+          </li>
+        </ol>
+        <img src="./images/avocado3.png" alt="קופסת פלסטיק פתוחה ובתוכה חצי אבוקדו עם גרעין ולצידו בצל">
+      </div>
+    </div>
+    <div>
+      <h3 class="title"> <SPAN CLASS="pluse"> +</SPAN> כמה זמן אבוקדו יכול להישאר טרי במקרר ?
+      </h3>
+      <div class="answer">
+        <p>אבוקדו בשל נשמר במקרר למשך 3- 5 ימים. </p>
+        <img src="./images/avocado4.jpg"
+          alt="  מקרר פתוח. רואים בתמונה את שני המדפים העליונים של המקרר- שם בהם פירות וצנצנות. בתמונה רואים יד שמושטלת לתוך המקרר ומוציאה אבוקדו מהמדף העליון שלו">
+      </div>
+    </div>
+    <div>
+      <h3 class="title"> <SPAN CLASS="pluse"> +</SPAN> האם ניתן להקפיא אבוקדו ?
+      </h3>
+      <div class="answer">
+        <p>
+          כן. על מנת להקפיא את האבוקדו יש להסיר את הקליפה שלו,
+          לחתוך אותו לפרוסות ולעטוף אותן יחד בניילון. רצוי לטפטף מעל לימון על מנת שישמור על
+          הטריות שלו. אבוקדו יכול להישאר במקפיא 4- 6 חודשים. אבוקדו קפוא הוא נהדר לשייקים,
+          גלידות ואפילו ניתן להכין ממנו מחית או לשים אותו בסלט.
+        </p>
+        <img src="./images/avocado5.png" alt=" בתמונה רואים אבוקדו החתוך לקוביות מרובעות">
+      </div>
+    </div>
+  </section>
+
+  <section id="section3" name="watermelon" title="אבטיח" class="slide">
+    <div>
+      <h3 class="title"><SPAN CLASS="pluse"> +</SPAN> איך לאחסן את האבטיח כשהוא קשה? </h3>
+      <div class="answer">
+        <p> הניחו אותו על השיח, הרחק מאור שמש ישיר, במקום יחסית ממוזג. </p>
+        <p> אבטיח יכול להישאר מחוץ למקרר שבוע עד שבועיים. </p>
+        <img src="./images/watermelon1.png" alt="בתמונה רואים אבטיח שלם, מונח על השיש, לצד הכיור">
+      </div>
+    </div>
+
+    <div>
+      <h3 class="title"> <SPAN CLASS="pluse"> +</SPAN> איך לאחסן את האבטיח כשהוא בשל? </h3>
+      <div class="answer">
+        <P> אם האבטיח שלכם בשל ואין לכם זמן לאכול אותו, אל תיבהלו, אבל גם אל תחתכו אותו. </P>
+        <P> הכניסו את האבטיח כשהוא שלם לתוך המקרר – הקור יאט את ההבשלה. </P>
+        <P> יכול להישאר טרי במקרר במשך שבועיים עד שלושה. </P>
+        <img src="./images/watermelon2.png"
+          alt="בתמונה רואים אבטיח שלם שמונח בתוך מקרר, במדף התחתון שלו. האבטיח תופס את כל המדף">
+      </div>
+    </div>
+
+    <div>
+      <h3 class="title"> <SPAN CLASS="pluse"> +</SPAN>איך לאחסן את האבטיח כשהוא חתוך? </h3>
+      <div class="answer">
+        <P> עטפו את החלק החשוף של האבטיח בניילון נצמד – רצוי להחליף את הניילון בכל פעם </P>
+        <p> שפותחים אותו. אם הוא חתוך לקוביות- הכניסו אותן לתוך קופסת פלסיק אטומה </p>
+        <img src="./images/watermelon3.png" alt="בתמונה רואים חצי אבטיח העטוף בניילון נצמד">
+      </div>
+    </div>
+
+
+    <div>
+      <h3 class="title"> <SPAN CLASS="pluse"> +</SPAN> מה ניתן לעשות עם הקליפה? </h3>
+      <div class="answer">
+        <p> לפני שאתם זורקים את הקליפה של האבטיח, כדאי שתדעו שניתן לאכול את הקליפה שלו והיא אפילו נחשבת לבריאה מאוד!
+        </p>
+        <P> ניתן להשתמש בקליפת בצורות שונות- לכבוש בחומץ, לטחון לפשטידה ואפילו לצלות או על האש! </P>
+        <img src="./images/watermelon4.png" alt="בתמונה רואים קליפות של אבטיח מפוזרות על צלחת">
+      </div>
+    </div>
+
+
+    <div>
+      <h3 class="title"> <SPAN CLASS="pluse"> +</SPAN> האם ניתן להקפיא את האבטיח? </h3>
+      <div class="answer">
+        <p> בהחלט! זו דרך מצויינת לשמור על הטריות שלו. אבטיח קפוא יכול להישמר שנה שלמה. </p>
+        <p> על מנת להקפיא, יש לחתוך את האבטיח לקוביות או לכדורי גלידה (ללא הקליפה) ולהכניס לתוך שקית אטומה </p>
+        <p> ניתן אפילו לחבר מקלות ארטיק ולהכין ממנו קרטיבים כמו בתמונה </p>
+        <img src="./images/watermelon5.png" alt="בתמונה רואים אבטיח החתוך לצורת משולשים שמחוברים אליהם מקלות של ארטיק">
+      </div>
+    </div>
+  </section>
+
+  <section id="section4" name="grapes" title="ענבים" class="slide">
+
+    <div>
+      <h3 class="title">
+        <P> <SPAN CLASS="pluse"> +</SPAN> איפה לאחסן? </P>
+      </h3>
+      <div class="answer">
+        <P> המקום הטוב ביותר לאחסון הענבים הוא המקרר. רצוי להניח אותם בחלק האחורי של המגירות התחתונות (בד"כ זה המקום
+          הקר
+        </P>
+        <P> ביותר) והרחק ממזון מסריח כמו בצל או דגים (ענבים סופגים ריחות). </P>
+        <p> ענבים יכולים להישאר טריים במקרר עד שלושה שבועות</p>
+        <img src=" ./images/grapes1.png" alt="בתמונה רואים מקרר ריק כשמלפניו- בחלק התחתון שלו מוצגים ענבים">
+      </div>
+    </div>
+
+
+    <div>
+      <h3 class="title"><SPAN CLASS="pluse"> +</SPAN> באיזה כלי לאחסן?</h3>
+      <div class="answer">
+        <p> ענבים צריכים מרחב נשימה כדי להחזיק מעמד זמן רב ככל האפשר, ולכן אין להכניס אותם לתוך שקית אטומה </p>
+        <p> הכנסתם לשקית אטומה יוצרת לחות שגורמת לרקבון שלהם) . </p>
+        <p> רצוי להכניס את הענבים בתוך האריזה המקורית שלהם (שיש בה כבר פתחי אוורור) </p>
+        <p> או בתוך מיכל מאוורר אחר. </p>
+        <img src=" ./images/grapes.png" alt="בתמונה רואים ענבים בתוך מארז פלסטיק מחורר" />
+      </div>
+    </div>
+
+    <div>
+      <h3 class="title"><SPAN CLASS="pluse"> +</SPAN> האם לשטוף לפני האחסון?</h3>
+      <div class="answer">
+        <P> לא. שטיפת הענבים גורמת לפרי להירקב מהר יותר ולכן יש לשטוף רק לפני האכילה </P>
+        <img src=" ./images/grapes3.png" alt="בתמונה רואים שתי ידיים שוטפות את הענבים מעל לכיור">
+      </div>
+    </div>
+
+    <div>
+      <h3 class="title"><SPAN CLASS="pluse"> +</SPAN> האם ניתן להקפיא?</h3>
+      <div class="answer">
+        <P> בהחלט. פשוט הכניסו אותן לתוך שקית ניילון אטומות </P>
+        <P> ענבים קפואים הם חטיף מרענן ובריא וניתן גם להכין מהם שייקים </P>
+        <img src=" ./images/grapes4.png" alt="בתמונה רואים ענבים קפואים בתוך קערה ויד מושטלת לקחת את אחד הענבים מהקערה">
+      </div>
+    </div>
+
+
+  </section>
+</main>
